@@ -20,9 +20,9 @@ you can then see all weather updates in question and can add a temperature and h
 by default when adding a new weather update, it will grab the current time.
 
 queries can be used from the command line, this can be done by running the following:
-```python.exe ```
-```from app import db ```
-```from app import Sensor, WeatherData```
+1. ```python.exe ```<br>
+2. ```from app import db ```<br>
+3. ```from app import Sensor, WeatherData```
 Queries can then be used by following the documentation at: 
 [Select, Insert, Delete — Flask-SQLAlchemy Documentation (2.x) (palletsprojects.com)](https://flask-sqlalchemy.palletsprojects.com/en/2.x/queries/#querying-records)
 

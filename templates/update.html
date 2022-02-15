@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>Weather Sensor</title> 
+{% endblock %}
+
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">A Rainy Day: Weather Updater</h1>
+
+    <table>
+        <tr>
+            <th>Weather Sensor ID</th>
+            <th>Weather Sensor Name</th>
+            <th>Weather Temp</th>
+            <th>Weather Humidity</th>
+            <th>Weather Time</th>
+            
+        </tr>
+        {% for weather in weathers %}
+            <tr>
+                <td>{{ weather.sensor.id}}</td>
+                <td>{{ weather.sensor.name}}</td>
+                <td>{{ weather.temperature }}</td>
+                <td>{{ weather.humidity }}</td>
+                <td>{{weather.date_created}}</td>
+
+            </tr>
+        {% endfor %}
+    </table>
+
+    <form action="/update/{{sensor.id}}" method="POST">
+        <br>
+        <label for="name">Sensor Temp</label><br>
+        <input type="text" name="temperature" id="temperature"><br>
+        <label for="country">Sensor Humidity</label><br>
+        <input type="text" name="humidity" id="humidity"><br>
+
+        <input type="submit" value="Update Weather"><br><br>
+
+
+</div>
+{% endblock %}

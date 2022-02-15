@@ -22,7 +22,7 @@ by default when adding a new weather update, it will grab the current time.
 queries can be used from the command line, this can be done by running the following:
 1. ```python.exe ```<br>
 2. ```from app import db ```<br>
-3. ```from app import Sensor, WeatherData```
+3. ```from app import Sensor, WeatherData```<br>
 Queries can then be used by following the documentation at: 
 [Select, Insert, Delete — Flask-SQLAlchemy Documentation (2.x) (palletsprojects.com)](https://flask-sqlalchemy.palletsprojects.com/en/2.x/queries/#querying-records)
 

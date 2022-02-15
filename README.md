@@ -3,7 +3,7 @@
 # Rainy Day
 
 ## Project Description:
-an application created with flask. Database and querying created and controlled by SQLAlchemy.
+a web application created with python and flask. Database and querying created and controlled by SQLAlchemy.
 
 UI in very basic HTML & CSS. This was to make visualisations easier.
 

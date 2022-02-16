@@ -9,7 +9,7 @@ UI in very basic HTML & CSS. This was to make visualisations easier.
 
 ## How to run:
 if required, pip install the following using:
-```pip install flask, sqlalchemy, webargs ```
+```pip install -r requirements.txt ```
 
 the database already contains some dummy data, including sensors and weather data attached to those sensors. 
 

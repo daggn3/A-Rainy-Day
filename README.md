@@ -65,3 +65,6 @@ This was my first time using flask and sqlalchemy so it was very much a learning
 If I had more time I would take a much more measured approach to database design with a more
 Elegant implementation but for a first effort it was a great learning experience.
 
+Creating the relationship between the two tables was somewhat confusing but once I understood, creating updates was quite straightforward. 
+
+

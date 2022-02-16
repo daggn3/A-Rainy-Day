@@ -20,7 +20,7 @@ app = Flask(__name__)
 
 # Create the location of the SQLlite Database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
-db = SQLAlchemy(app)
+
 
 # Suppress deprecation warning
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -57,6 +57,13 @@ class Sensor(db.Model):
 # Requires a temperature, humidity and a date created
 # We also take in the sensor id from our Sensor database
 # This allows us to create weather updates on a per sensor basis
+
+def __init__(self, name: str, country: str, city: str):
+
+    self.name = name
+    self.country = country
+    self.city = city
+
 
 class WeatherUpdate(db.Model):
     id = db.Column(db.Integer, primary_key=True)

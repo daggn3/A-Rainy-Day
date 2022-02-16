@@ -3,7 +3,7 @@ from flask import Flask, redirect, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from importlib_metadata import Sectioned
-
+from sqlalchemy.sql import func
 """
 from jinja2 import TemplateError
 from sqlalchemy import create_engine
@@ -51,7 +51,7 @@ class Sensor(db.Model):
     )
 
     def __repr__(self):
-        return f'<Sensor: {self.name}>'
+        return f'<Sensor: {self.name}, Country: {self.country}, City: {self.country}>'
 
 # Our weather update database model
 # Requires a temperature, humidity and a date created
@@ -73,7 +73,7 @@ class WeatherUpdate(db.Model):
     sensor_id = db.Column(db.Integer, db.ForeignKey("sensor.id"))
     
     def __repr__(self):
-        return f'<WeatherUpdate: {self.id}>'
+        return f'<WeatherUpdate: Sensor id: {self.sensor_id}, Temperature: {self.temperature}, Humindity :{self.humidity} >'
 
 
 # Route to our home page

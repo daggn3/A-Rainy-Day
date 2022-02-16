@@ -25,10 +25,19 @@ queries can be used from the command line, this can be done by running the follo
 1. ```python.exe ```<br>
 2. ```from app import db ```<br>
 3. ```from app import Sensor, WeatherData```<br>
+4. ```from datetime import datetime```<br>
+5. ```from from sqlalchemy.sql import func```<br>
+
+Func can be used to express averages and means for data such as temperature and humidity. 
+
 Queries can then be used by following the documentation at: 
 [Select, Insert, Delete — Flask-SQLAlchemy Documentation (2.x) (palletsprojects.com)](https://flask-sqlalchemy.palletsprojects.com/en/2.x/queries/#querying-records)
 
-An example query:
+Example queries:
+```WeatherUpdate.query.order_by(WeatherUpdate.id).all()```<br>
+
+Retrieves all weather updates, this will include Associated Sensor id, the temperature and the humidity.
+
 ````WeatherUpdate.query.filter(WeatherUpdate.date_created > date(2021, 1, 1)).count````
 
 This will find the number weather updates that took place after the 1st of January 2021. 

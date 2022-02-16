@@ -34,7 +34,7 @@ Queries can then be used by following the documentation at:
 [Select, Insert, Delete — Flask-SQLAlchemy Documentation (2.x) (palletsprojects.com)](https://flask-sqlalchemy.palletsprojects.com/en/2.x/queries/#querying-records)
 
 Example queries:
-```WeatherUpdate.query.order_by(WeatherUpdate.id).all()```
+```WeatherUpdate.query.order_by(WeatherUpdate.id).all()```<br>
 
 Retrieves all weather updates, this will include Associated Sensor id, the temperature and the humidity.
 

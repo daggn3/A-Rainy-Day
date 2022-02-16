@@ -31,4 +31,22 @@ Queries can then be used by following the documentation at:
 An example query:
 ````WeatherUpdate.query.filter(WeatherUpdate.date_created > date(2021, 1, 1)).count````
 
-This will find all weather updates that took place after the 1st of January 2021. 
+This will find the number weather updates that took place after the 1st of January 2021. 
+
+## Features 
+
+A basic UI allowing Registration of Sensor with a name, a country and a city through an API call. 
+
+A basic UI to view weather updates and update individual sensor weather information through an API call. 
+
+### Features I would include
+
+I created a basic UI for a searching weather information based on certain parameters but time constraints led me 
+to leaving this implementation. Queries are then completed through the terminal. 
+
+I Would have also liked to create a much more appealing UI with a frontend framework but as this wasn't necessary, the UI presented was sufficient. 
+## Challenges I encountered
+This was my first time using flask and sqlalchemy so it was very much a learning on the job process.
+If I had more time I would take a much more measured approach to database design with a more
+Elegant implementation but for a first effort it was a great learning experience.
+

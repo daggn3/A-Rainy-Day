@@ -14,14 +14,14 @@
 
     
     <label for="option">Choose a Sensor:</label>
-    <select name="option" id="option">
+    <select name="sensor" id="sensor">
     {% for sensor in sensors %}
-    <option value="option"> {{sensor.id}}</option>
+    <option value="sensor"> {{sensor.id}}</option>
     {% endfor %}
 
     </select>
     <br>
-    
+
     <label for="option">Choose an Option:</label>
         <select name="option" id="option">
         <option value="temp">Temperature</option>
@@ -38,5 +38,6 @@
             
         </select>
         <input type="submit" value="submit"><br><br>
+        <button onclick="location.href = '/';" id="myButton" class="float-left submit-button" >Home</button>
 </div>
 {% endblock %}

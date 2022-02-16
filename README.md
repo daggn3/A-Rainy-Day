@@ -35,7 +35,7 @@ Func can be used to express averages and means for data such as temperature and 
 Queries can then be used by following the documentation at: 
 [Select, Insert, Delete — Flask-SQLAlchemy Documentation (2.x) (palletsprojects.com)](https://flask-sqlalchemy.palletsprojects.com/en/2.x/queries/#querying-records)
 
-func.avg can be used to query and retrieve average values for columns such as temperature and humidity.
+*func.avg* can be used to query and retrieve average values for columns such as temperature and humidity.
 
 Example queries:
 ```WeatherUpdate.query.order_by(WeatherUpdate.id).all()```<br>

@@ -39,6 +39,10 @@ A basic UI allowing Registration of Sensor with a name, a country and a city thr
 
 A basic UI to view weather updates and update individual sensor weather information through an API call. 
 
+## Data Flow Diagram
+
+<img src="Flow.png" width="350" height="500" />
+
 ### Features I would include
 
 I created a basic UI for a searching weather information based on certain parameters but time constraints led me 

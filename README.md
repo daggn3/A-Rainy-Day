@@ -9,7 +9,9 @@ UI in very basic HTML & CSS. This was to make visualisations easier.
 
 ## How to run:
 if required, pip install the following using:
-```pip install -r requirements.txt ```
+```pip install flask, sqlalchemy, datetime, webargs```
+
+Requirements.txt contains all requirements on my machine, so maybe not a good idea to pip install that!
 
 the database already contains some dummy data, including sensors and weather data attached to those sensors. 
 
@@ -32,6 +34,8 @@ Func can be used to express averages and means for data such as temperature and 
 
 Queries can then be used by following the documentation at: 
 [Select, Insert, Delete — Flask-SQLAlchemy Documentation (2.x) (palletsprojects.com)](https://flask-sqlalchemy.palletsprojects.com/en/2.x/queries/#querying-records)
+
+*func.avg* can be used to query and retrieve average values for columns such as temperature and humidity.
 
 Example queries:
 ```WeatherUpdate.query.order_by(WeatherUpdate.id).all()```<br>
@@ -62,4 +66,7 @@ I Would have also liked to create a much more appealing UI with a frontend frame
 This was my first time using flask and sqlalchemy so it was very much a learning on the job process.
 If I had more time I would take a much more measured approach to database design with a more
 Elegant implementation but for a first effort it was a great learning experience.
+
+Creating the relationship between the two tables was somewhat confusing but once I understood, creating updates was quite straightforward. 
+
 

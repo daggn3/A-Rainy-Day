@@ -12,6 +12,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 """
 
+## Start of our flask application 
+
 # Create my flask app
 app = Flask(__name__)
 

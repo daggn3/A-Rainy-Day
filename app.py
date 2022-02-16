@@ -13,6 +13,7 @@ from sqlalchemy.orm import sessionmaker, relationship
 """
 
 ## Start of our flask application 
+##will be added to heroku
 
 # Create my flask app
 app = Flask(__name__)

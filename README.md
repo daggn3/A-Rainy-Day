@@ -26,7 +26,7 @@ You can then see all weather updates in question and can add a temperature and h
 By default when adding a new weather update, it will grab the current time.
 
 Queries can be used from the command line, this can be done by running the following:
-1. ```python.exe ```<br>
+1. ```python3.exe ```<br>
 2. ```from app import db ```<br>
 3. ```from app import Sensor, WeatherData```<br>
 4. ```from datetime import datetime```<br>

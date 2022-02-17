@@ -10,22 +10,22 @@ UI in very basic HTML & CSS. This was to make visualisations easier.
 ## How to run:
 Please use python3.x to run this flask application.
  
-if required, pip install the following using:
+If required, pip install the following using:
 ```pip install flask, sqlalchemy, flask_sqlalchemy, datetime, webargs```
 
 Requirements.txt contains all requirements on my machine, so maybe not a good idea to pip install that!
 
-the database already contains some dummy data, including sensors and weather data attached to those sensors. 
+The database already contains some dummy data, including sensors and weather data attached to those sensors. 
 
-to add sensors, give it a name, a country and a city location. 
+To add sensors, give it a name, a country and a city location. 
 
-to update a sensor, click on any sensor to add a weather update to that sensor.
+To update a sensor, click on any sensor to add a weather update to that sensor.
 
-you can then see all weather updates in question and can add a temperature and humidity.
+You can then see all weather updates in question and can add a temperature and humidity.
 
-by default when adding a new weather update, it will grab the current time.
+By default when adding a new weather update, it will grab the current time.
 
-queries can be used from the command line, this can be done by running the following:
+Queries can be used from the command line, this can be done by running the following:
 1. ```python.exe ```<br>
 2. ```from app import db ```<br>
 3. ```from app import Sensor, WeatherData```<br>

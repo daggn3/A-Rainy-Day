@@ -13,6 +13,7 @@
     <table>
         <tr>
             <th>Sensor ID</th>
+            <th>Sensor Name</th>
             <th>Sensor Country</th>
             <th>Sensor City</th>
             <th>Actions</th>
@@ -20,14 +21,15 @@
         {% for sensor in sensors %}
             <tr>
                 <td>{{ sensor.id }}</td>
+                <td>{{ sensor.name }}</td>
                 <td>{{ sensor.country }}</td>
                 <td>{{ sensor.city }}</td>
                 
                 <td>
-                    <button onclick="location.href = '/delete/{{sensor.id}}';" id="myButton" class="float-left submit-button" >Delete Sensor</button>
+                    <button class="button" onclick="location.href = '/delete/{{sensor.id}}';" id="myButton" >Delete Sensor</button>
                     <br>
-                    <br>
-                    <button onclick="location.href = '/update/{{sensor.id}}';" id="myButton" class="float-left submit-button" >Update Sensor Weather</button>
+                
+                    <button class="button" onclick="location.href = '/update/{{sensor.id}}';" id="myButton">Update Sensor Weather</button>
                 </td>
             </tr>
         {% endfor %}
@@ -35,12 +37,12 @@
 
 <form action="/" method="POST">
     <br>
-    <label for="name">Sensor Name</label><br>
-    <input type="text" name="name" id="name"><br>
-    <label for="country">Sensor Country</label><br>
-    <input type="text" name="country" id="country"><br>
-    <label for="city">Sensor City</label><br>
-    <input type="text" name="city" id="city"><br>
+    <label for="name">The Sensor Name:</label>
+    <input type="text" name="name" id="name" pattern="[^A-Za-z0-9]+" title="Valid Sensor Name"><br>
+    <label for="country">The Sensor Country: </label>
+    <input type="text" name="country" id="country" pattern="[A-Za-z]*" title="Valid Country Name"><br>
+    <label for="city">The Sensor City:</label>
+    <input type="text" name="city" id="city" pattern="[A-Za-z]*" title="Valid City Name"><br>
 <br>
 
     <input type="submit" value="Add Sensor">

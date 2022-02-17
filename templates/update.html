@@ -35,9 +35,9 @@
         <br>
         <label for="name">Sensor Temp</label><br>
         
-        <input type="text" name="temperature" id="temperature"><br>
+        <input type="text" name="temperature" id="temperature" pattern="[-+]?\d*\.\d+|\d+" title="Valid Temperature"><br>
         <label for="country">Sensor Humidity</label><br>
-        <input type="text" name="humidity" id="humidity"><br>
+        <input type="text" name="humidity" id="humidity" pattern="[-+]?\d*\.\d+|\d+" title="Valid Humidity"><br>
         <br>
         <input type="submit" value="Update Weather"><br><br>
 

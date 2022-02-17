@@ -37,8 +37,9 @@ Queries can then be used by following the documentation at:
 
 *func.avg* can be used to query and retrieve average values for columns such as temperature and humidity.
 
-Example queries:
-```WeatherUpdate.query.order_by(WeatherUpdate.id).all()```<br>
+Example queries:<br>
+```WeatherUpdate.query.order_by(WeatherUpdate.id).all()```
+
 
 Retrieves all weather updates, this will include Associated Sensor id, the temperature and the humidity.
 
@@ -48,25 +49,29 @@ This will find the number weather updates that took place after the 1st of Janua
 
 ## Features 
 
-A basic UI allowing Registration of Sensor with a name, a country and a city through an API call. 
+- A basic UI allowing Registration of Sensor with a name, a country and a city through an API call. 
 
-A basic UI to view weather updates and update individual sensor weather information through an API call. 
+- A basic UI to view weather updates and update individual sensor weather information through an API call. 
+
+- Weather sensor querying through Flask & SQLAlchemy. 
 
 ## Data Flow Diagram
 
 <img src="Flow.png" width="350" height="500" />
 
-### Features I would include
+### Things I would include
 
-I created a basic UI for a searching weather information based on certain parameters but time constraints led me 
+- I created a basic UI for a searching weather information based on certain parameters but time constraints led me 
 to leaving this implementation. Queries are then completed through the terminal. 
 
-I Would have also liked to create a much more appealing UI with a frontend framework but as this wasn't necessary, the UI presented was sufficient. 
+- I would of also loved to add more testing. Tests consist of basic unit tests to make sure routes work and also to test database functionality. 
+
+- I Would have also liked to create a much more appealing UI with a frontend framework but as this wasn't necessary, the UI presented was sufficient. 
 ## Challenges I encountered
-This was my first time using flask and sqlalchemy so it was very much a learning on the job process.
+- This was my first time using flask and sqlalchemy so it was very much a learning on the job process.
 If I had more time I would take a much more measured approach to database design with a more
 Elegant implementation but for a first effort it was a great learning experience.
 
-Creating the relationship between the two tables was somewhat confusing but once I understood, creating updates was quite straightforward. 
+- Creating the relationship between the two tables was somewhat confusing but once I understood, creating updates was quite straightforward. 
 
 

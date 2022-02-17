@@ -9,7 +9,7 @@ UI in very basic HTML & CSS. This was to make visualisations easier.
 
 ## How to run:
 if required, pip install the following using:
-```pip install flask, sqlalchemy, datetime, webargs```
+```pip install flask, sqlalchemy, flask_sqlalchemy datetime, webargs```
 
 Requirements.txt contains all requirements on my machine, so maybe not a good idea to pip install that!
 

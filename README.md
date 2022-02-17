@@ -8,7 +8,7 @@ A web application created with python3 and flask. Database and querying created 
 UI in very basic HTML & CSS. This was to make visualisations easier.
 
 ## How to run:
-Please use python3.x to run this flask application.
+**Please use python3.x to run this flask application.**
  
 If required, pip install the following using:
 ```pip install flask, sqlalchemy, flask_sqlalchemy, datetime, webargs```

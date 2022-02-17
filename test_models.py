@@ -58,7 +58,7 @@ def test_new_sensor():
 
 
 # Testing responses for pages
-
+#testing 
 def test_home():
 
     response = app.test_client().get("/")
